@@ -26,7 +26,7 @@ const resolvers = require('./graphql/resolvers/index.js')
 
 
 
-mongoose.connect(process.env.MONGODB, {useNewUrlParser: true})
+mongoose.connect('mongodb+srv://seanna:test123@atlascluster.xx37ets.mongodb.net', {useNewUrlParser: true})
     .then (() => {
         console.log('connected to database')
     })
